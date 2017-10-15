@@ -3,9 +3,9 @@
 
 <head>
     <title>Zagraj!</title>
-    <meta chasret='keywords' content=''>
-    <meta charset='description' content=''>
-    <meta charset='author' content=''>
+    <meta chasret='keywords' content='game, gra, heroes, heroe, magic, magia, bohater, sword, miecz'>
+    <meta charset='description' content='Gra utrzymana w klimatach fantasy. Fantasy game'>
+    <meta charset='author' content='Sandra Ilczuk-Kiełczewska'>
     <meta charset='UTF-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel='stylesheet' href='css/style.css'>
@@ -24,31 +24,21 @@
         <div id='spellBookAlertBox'>
             <div id='leftSideSpellBook'>
                 <h3>Księga Magii</h3>
-                <img src='grafika/spellWhirl.jpg' id='whirl' onclick="spell(id)">
-                <p>wir zniszczenia</p>
-                <img src='grafika/spellBlackMagic.jpg' id='blackMagic' onclick="spell(id)">
-                <p>przywołanie mocy</p>
-                <img src='grafika/spellNature.jpg' id='nature' onclick="spell(id)">
-                <p>uzdrowienie</p>
             </div>
             <div id='rightSideSpellBook'>
-                <img src='grafika/spellEye.jpg' id='eye' onclick="spell(id)">
-                <p>oślepienie</p>
-                <img src='grafika/spellBlackMagic2.jpg' id='blackMagic2' onclick="spell(id)">
-                <p>pradawne zło</p>
-                <img src='grafika/spellFlash.jpg' id='flash' onclick="spell(id)">
-                <p>piorun</p>
-                <p id='closeSpellBook' onclick="closeSpellBook()">wyjdź</p>
+                <div id='spellRightSideSpellBook'></div>        
+                    <div style='clear: both'></div>
+                    <p id='closeSpellBook' onclick="closeSpellBook()">wyjdź</p>
             </div>
         </div>
-   
-    <header>
-        <h2 id='header'>Witaj w świecie magii! <button type='button' class='btn btn-danger' title='zagraj!' data-toggle='tooltip' onclick='letsPlay(this)'> zagraj!</button></h2>
-    </header>
 
-    <div class='row'>
-        <div class='col-sm-12' id='play'></div>
-    </div>
+        <header>
+            <h2 id='header'>Witaj w świecie magii! <button type='button' class='btn btn-danger' title='zagraj!' data-toggle='tooltip' onclick='letsPlay(this)'> zagraj!</button></h2>
+        </header>
+
+        <div class='row'>
+            <div class='col-sm-12' id='play'></div>
+        </div>
     </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>

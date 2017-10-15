@@ -23,13 +23,16 @@ header {
 #storyDiv {
     margin: 0 auto;
 }
-
-/**nowe! */
-
 /* początkowy opis bohaterów*/
 #aboutHero {
     float: left;
     margin-top: 20px;
+}
+#rycerz:hover,
+#zlodziej:hover,
+#medyk:hover,
+#mag:hover {
+    border: 1px solid gold;
 }
 
 #actionDivAll {   
@@ -98,11 +101,11 @@ header {
 
 #closeDiv,
 #alertBox {
-    height: 190px;
+    height: auto;
     width: 350px;
     background: #222;
     padding: 20px;
-    margin-top: -250px;
+    margin-top: -1000px;
     z-index: 1000;
     position: absolute;
     margin-left: 33%;
@@ -119,33 +122,34 @@ header {
     position: absolute;
     text-align: center;  
     color: #111;
+    padding: 10px;
 }
 #leftSideSpellBook {
-    margin-left: 31px;
+    margin-left: 24px;
     width: 283px;
-    text-align: center;
     float: left;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 #rightSideSpellBook {
     width: 283px;
     margin-right: 20px;
     float: left;
-    padding-top: 70px;
+    padding-top: 40px;
 }
 #closeSpellBook {
     text-align: right;
-    color: #30200b; 
+    color: #30200b;
 }
 #closeSpellBook:hover {
     color: gold;
 }
 #spellBookAlertBox img {
     padding: 10px;
+    float: left;
 }
 #spellBookAlertBox img:hover {
     border: 1px solid gold;
-    box-shadow: inset 0 0 20px gold;
+    box-shadow: inset 0 0 8px gold;
 }
 #alertBox button {
     margin-top: 20px

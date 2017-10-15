@@ -6,11 +6,7 @@ function letsPlay(button) {
     header.style.display = 'none';
     document.getElementById('play').innerHTML = '<div class="col-md-8 col-sm-12" id="storyDiv">' + story + '<form>Podaj swoje imię: <input id="name" type="text" name="userMame"></form></div>';
 
-    //        for (i = 0; i < heroAll.length; i++) {
-    //            document.getElementById('storyDiv').innerHTML += heroAll[i].divAboutHero;
-    //    
-    //        }
-    document.getElementById('storyDiv').innerHTML += '<div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/knight.jpg" onclick="requiredName(knight)" id="Rycerz"><h3>Rycerz</h3></div><div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/thief.jpg" onclick="requiredName(thief)" id="Złodziej"><h3>Złodziej</h3></div><div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/medic.jpg" onclick="requiredName(medical)" id="Medyk"><h3>Medyk</h3></div><div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/mag.jpg" onclick="requiredName(wizard)" id="Mag"><h3>Mag</h3></div>'
+    document.getElementById('storyDiv').innerHTML += '<div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/knight.jpg" onclick="requiredName(knight)" id="rycerz"><h3>Rycerz</h3><p>życie: ' + knight.life + '</p><p>atak: ' + knight.attack + '</p><p>obrona: ' + knight.defence + '</p><p>szybkość: ' + knight.speed + '</p><p>mana: ' + knight.mana + '</p></div><div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/thief.jpg" onclick="requiredName(thief)" id="zlodziej"><h3>Złodziej</h3><p>życie: ' + thief.life + '</p><p>atak: ' + thief.attack + '</p><p>obrona: ' + thief.defence + '</p><p>szybkość: ' + thief.speed + '</p><p>mana: ' + thief.mana + '</p></div><div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/medic.jpg" onclick="requiredName(medical)" id="medyk"><h3>Medyk</h3><p>życie: ' + medical.life + '</p><p>atak: ' + medical.attack + '</p><p>obrona: ' + medical.defence + '</p><p>szybkość: ' + medical.speed + '</p><p>mana: ' + medical.mana + '</p></div><div id="aboutHero" class="col-md-3 col-sm-6"><img src="js/../grafika/mag.jpg" onclick="requiredName(wizard)" id="mag"><h3>Mag</h3><p>życie: ' + wizard.life + '</p><p>atak: ' + wizard.attack + '</p><p>obrona: ' + wizard.defence + '</p><p>szybkość: ' + wizard.speed + '</p><p>mana: ' + wizard.mana + '</p></div>'
 }
 
 /** bohaterowie */
@@ -26,14 +22,13 @@ function HeroesAll(hid, id, type, title, defence, attack, speed, mana, life, img
     this.life = life;
     this.img = img;
     this.description = description;
-    this.divAboutHero = '<div id="aboutHero" class="col-md-3 col-sm-6"><img src="' + this.img + '"onclick="requiredName(HeroesAll)" id="' + this.hid + '"><h3>' + this.title + '</h3><p style="color:red">życie: ' + this.life + '</p><p>obrona: ' + this.defence + '</p><p>atak: ' + this.attack + '</p><p>szybkość: ' + this.speed + '</p><p>mana: ' + this.mana + '</p></div>',
-        this.divStage2 = '<div class="col-sm-4 col-md-2" id="hero"><h3>' + this.id + '</h3><img src="' + this.img + '"><p id= "heroLife" style="color:red">życie: ' + this.life + '</p><p>obrona: ' + this.defence + '</p><p>atak: ' + this.attack + '</p><p>szybkość: ' + this.speed + '</p><p>mana: ' + this.mana + '</p></div>'
+    this.divStage2 = '<div class="col-sm-4 col-md-2" id="hero"><h3>' + this.id + '</h3><img src="' + this.img + '"><p id= "heroLife" style="color:red">życie: ' + this.life + '</p><p>obrona: ' + this.defence + '</p><p>atak: ' + this.attack + '</p><p>szybkość: ' + this.speed + '</p><p id="mana">mana: ' + this.mana + '</p></div>'
 }
 var heroAll = [
-    knight = new HeroesAll(0, 'Rycerz', 'knight', 'Rycerzem', 10, 10, 2, 0, 10, 'js/../grafika/knight.jpg', ', świetnie, a więc jesteś dzielnym rycerzem o wielkiej sile!', ),
-    thief = new HeroesAll(1, 'Złodziej', 'thief', 'Złodziejem', 5, 7, 10, 1, 10, 'js/../grafika/thief.jpg', ', świetnie, a więc jesteś cwanym i przebiegłym rzezimieszkiem!'),
-    medical = new HeroesAll(2, 'Medyk', 'medical', 'Medykiem', 8, 5, 6, 3, 10, 'js/../grafika/medic.jpg', ', świetnie, a więc jesteś mądrym i niosącym pomoc człowiekiem!'),
-    wizard = new HeroesAll(3, 'Mag', 'Wizard', 'Magiem', 6, 7, 6, 5, 10, 'js/../grafika/mag.jpg', ', świetnie, a więc jesteś potężnym znającym wiele czarów magiem!')
+    knight = new HeroesAll(0, 'Rycerz', 'knight', 'Rycerzem', 10, 10, 2, 5, 10, 'js/../grafika/knight.jpg', ', świetnie, a więc jesteś dzielnym rycerzem o wielkiej sile!', ),
+    thief = new HeroesAll(1, 'Złodziej', 'thief', 'Złodziejem', 5, 7, 10, 5, 10, 'js/../grafika/thief.jpg', ', świetnie, a więc jesteś cwanym i przebiegłym rzezimieszkiem!'),
+    medical = new HeroesAll(2, 'Medyk', 'medical', 'Medykiem', 8, 5, 6, 8, 10, 'js/../grafika/medic.jpg', ', świetnie, a więc jesteś mądrym i niosącym pomoc człowiekiem!'),
+    wizard = new HeroesAll(3, 'Mag', 'Wizard', 'Magiem', 6, 7, 6, 10, 10, 'js/../grafika/mag.jpg', ', świetnie, a więc jesteś potężnym znającym wiele czarów magiem!')
 ]
 
 /** potwory**/
@@ -48,17 +43,34 @@ function CardsAll(title, defence, attack, speed, life, img, story) {
 }
 
 var cards = [
-    troll = new CardsAll('Troll', 3, 4, 4, 10, 'js/../grafika/troll.jpg', 'Jesteś w grocie, pod Twoimi stopami wala się mnóstwo kości. Odrzucasz jedną z czaszek, która odbija się z głuchym łoskotem do wnętrza jamy. Hałas budzi uśpionego stwora, nadchodzi Troll!'),
-    mudMonster = new CardsAll('Błotny Potwór', 4, 5, 5, 10, 'js/../grafika/blotny_potwor.png', 'Znajdujesz się daleko poza miastem. Jaskinie, la sy, bagna i wstrętny mlaskający dźwięk. Patrzysz, a zza głazu wyłania się Błotny Potwór.'),
-    vampire = new CardsAll('Wampir', 3, 5, 5, 10, 'js/../grafika/vampire.jpg', 'Znajdujesz się w opustoszałym domu, gdzie słyszysz płacz dziecka. Rozglądasz się uważnie po ciemnych pokojach aż nagle go dostrzegasz. Wampir!'),
-    cyclops = new CardsAll('Cyklop', 5, 2, 6, 10, 'js/../grafika/cyklop.jpg', 'Idąc wąską przełęczą, o mało nie zabija Ciebie głaz. Podnosisz wzrok, a Twoim oczom ukazuje się jednooka bestia, to cyklop!'),
-    gin = new CardsAll('Dżin', 3, 3, 5, 10, 'js/../grafika/gin.jpg', 'Czujesz jak żar leje się z nieba, idziesz resztkami sił. Nagle w zamieci piaskowej dostrzegasz majaczącą niebieską plamę, czy to pustynna oaza? Nie! To śmiertelnie niebezpieczny dżin!'),
-    centur = new CardsAll('Centaur', 5, 2, 5, 10, 'js/../grafika/centaur.jpg', 'Wiedziałeś, że schodzenie z leśnego szlaku to był kiepski pomysł, jednak te jagody wyglądały tak smakowicie. Gdy wkładasz kolejny owoc do ust zagradza Tobie drogę majestatyczny centaur. Przygotuj się do walki.'),
-    hellishHorse = new CardsAll('Piekielny Rumak', 3, 3, 5, 10, 'js/../grafika/hellishHorse.jpg', 'Sądzisz, że w życiu wiele już widziałeś dlatego rad jesteś, że nareszcie może odpocząć w tym pustym zagajniku. W momencie, gdy wyciągasz wygodnie nogi oparty o młodą brzózkę dochodzi Ciebie swąd spalenizny. Odwracasz się i dostrzegasz płonącego ogiera, to rumak samego diabła, to Piekielny Rumak! ')
-    // topielica
-    // syrna
-    // harpia
-    //niech jedna karta będzie pusta i wtedy gracz ma farta i dostaje złoto
+    troll = new CardsAll('Troll', 5, 4, 5, 10, 'js/../grafika/troll.jpg', 'Jesteś w grocie, pod Twoimi stopami wala się mnóstwo kości. Odrzucasz jedną z czaszek, która odbija się z głuchym łoskotem do wnętrza jamy. Hałas budzi uśpionego stwora, nadchodzi Troll!'),
+    mudMonster = new CardsAll('Błotny Potwór', 4, 6, 4, 10, 'js/../grafika/blotny_potwor.png', 'Znajdujesz się daleko poza miastem. Jaskinie, la sy, bagna i wstrętny mlaskający dźwięk. Patrzysz, a zza głazu wyłania się Błotny Potwór.'),
+    vampire = new CardsAll('Wampir', 5, 6, 8, 10, 'js/../grafika/vampire.jpg', 'Znajdujesz się w opustoszałym domu, gdzie słyszysz płacz dziecka. Rozglądasz się uważnie po ciemnych pokojach aż nagle go dostrzegasz. Wampir!'),
+    cyclops = new CardsAll('Cyklop', 7, 4, 4, 10, 'js/../grafika/cyklop.jpg', 'Idąc wąską przełęczą, o mało nie zabija Ciebie głaz. Podnosisz wzrok, a Twoim oczom ukazuje się jednooka bestia, to cyklop!'),
+    gin = new CardsAll('Dżin', 9, 5, 8, 10, 'js/../grafika/gin.jpg', 'Czujesz jak żar leje się z nieba, idziesz resztkami sił. Nagle w zamieci piaskowej dostrzegasz majaczącą niebieską plamę, czy to pustynna oaza? Nie! To śmiertelnie niebezpieczny dżin!'),
+    centur = new CardsAll('Centaur', 5, 8, 7, 10, 'js/../grafika/centaur.jpg', 'Wiedziałeś, że schodzenie z leśnego szlaku to był kiepski pomysł, jednak te jagody wyglądały tak smakowicie. Gdy wkładasz kolejny owoc do ust zagradza Tobie drogę majestatyczny centaur. Przygotuj się do walki.'),
+    hellishHorse = new CardsAll('Piekielny Rumak', 5, 7, 6, 10, 'js/../grafika/hellishHorse.jpg', 'Sądzisz, że w życiu wiele już widziałeś dlatego rad jesteś, że nareszcie może odpocząć w tym pustym zagajniku. W momencie, gdy wyciągasz wygodnie nogi oparty o młodą brzózkę dochodzi Ciebie swąd spalenizny. Odwracasz się i dostrzegasz płonącego ogiera, to rumak samego diabła, to Piekielny Rumak! '),
+    harpy = new CardsAll('Harpia', 6, 9, 7, 10, 'js/../grafika/harpy.jpg', 'Te tereny nie wyglądają przyjaźnie. Kilka sępów krąży nad Twoją głową już od dłuższego czasu, a noc nadchodzi coraz szybciej. Nagle słyszysz przerażający skowyt, a na policzku czujesz podmuch wiatru ostry niczym sztylet. Zaatakowała Ciebie harpia, uważaj jest przerażająco szybka.'),
+    sirena = new CardsAll('Syrena', 9, 4, 8, 10, 'js/../grafika/siren.jpg', 'Pływając po bezkresnych oceanach odpierając co jakiś czas atak piratów, słyszysz piękny śpiew, który mami Ciebie i obezwładnia. O mało nie wypadasz poza burtę, w ostatniej chwili powstrzymuje Ciebie marynarz. Strzeż się, to syrena niosąca zgubę.')
+//    emptyRoom = new CardsAll('Pusty pokój', 0, 0, 0, 0, 'js/../grafika/treasure.jpg', 'Błądzisz już tak kilka godzin, żadnego wampira, licza, nawet pająka! Nic, kompletna posucha. Znudzony nic nierobieniem wchodzisz do rozwalającego się domu, znudzony siadasz na zakurzonym fotelu. W kącie dostrzegasz stojącą skrzynię ze zdobnymi okuciami. Jednym porządnym szarpnięciem otwierasz wieko skrzyni. Na Twoich ustach pojawia się uśmiech, to złoto i kilka innych cennych rzeczy. To będzie przyjemny wieczór w gospodzie Pod Bezgłowym Kogutem.')
+]
+/**magia**/
+function SpellAll(spellId, name, mana, attack, defence, life, div) {
+    this.spellId = spellId;
+    this.name = name;
+    this.mana = mana;
+    this.attack = attack;
+    this.defence = defence;
+    this.life = life;
+    this.div = div
+}
+var spell = [
+    whirl = new SpellAll('whirl', 'wir zniszczenia', 2, 2, 0, 0, '<p><strong>wir zniszczenia </strong></p><img src="grafika/spellWhirl.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, whirl)"><p>Zadaje przeciwnikowi 2pkt uszkodzenia, 3 mana</p>'),
+    blackMagic = new SpellAll('blackMagic', 'przywołanie mocy', 4, 0, 0, 3, '<p><strong>przywołanie mocy</strong></p><img src="grafika/spellBlackMagic.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, blackMagic)"><p>Dodaje 3pkt do życia bohatera, 4 mana</p>'),
+    nature = new SpellAll('nature', 'Uzdrowienie', 2, 0, 0, 2, '<p><strong>Uzdrownie</strong></p><img src="grafika/spellNature.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, nature)"><p>Dodaje 2pkt życia bohatera, 2 mana</p>'),
+    hurt = new SpellAll('hurt', 'uszkodzenie', 2, 1, 0, 0, '<p><strong>oślepienie</strong></p><img src="grafika/spellEye.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, hurt)"><p>Uszkodź przeciwnika 1pkt, 2 mana</p>'),
+    blackMagic2 = new SpellAll('blackMagic2', 'Pradawne Zło', 5, 5, 0, 0, '<p><strong>pradawne zło</strong></p><img src="grafika/spellBlackMagic2.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, blackMagic2)"><p>Zadaje przeciwnikowi 5pkt uszkodzenia, 5 mana</p>'),
+    flash = new SpellAll('flash', 'piorun', 3, 2, 0, 0, '<p><strong>piorun</strong></p><img src="grafika/spellFlash.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, flash)"><p>Zadaje przeciwnikowi 2pkt uszkodzenia, 3 mana</p>')
 ]
 
 /** grafiki do przycisków **/
@@ -76,7 +88,6 @@ var btnImg = [
     mission = new btnImg('mission', 'js/../grafika/mission.jpg', 'newMission(chooseHero)', 'showActText(id)', 'hideActText(id)', 'activeText0', 'nowa misja'),
     store = new btnImg('store', 'js/../grafika/shop.jpg', 'getStore()', 'showActText(id)', 'hideActText(id)', 'activeText1', 'sklep'),
     close = new btnImg('close', 'js/../grafika/door.jpg', 'closeFn()', 'showActText(id)', 'hideActText(id)', 'activeText2', 'wyjdź z gry'),
-//    attack = new btnImg('attack', 'js/../grafika/walcz.png', 'atack(id)', 'showActText(id)', 'hideActText(id)', 'activeText3', 'atakuj!'),
     attack = new btnImg('attack', 'js/../grafika/walcz.png', 'atack(chooseHero, chooseMonster)', 'showActText(id)', 'hideActText(id)', 'activeText3', 'atakuj!'),
     spellBook = new btnImg('spellBook', 'js/../grafika/magic.png', 'spellBookFn()', 'showActText(id)', 'hideActText(id)', 'activeText4', 'księga zaklęć'),
     runAway = new btnImg('runAway', 'js/../grafika/uciekaj.png', 'runAwayFn()', 'showActText(id)', 'hideActText(id)', 'activeText5', 'uciekaj')
@@ -84,7 +95,7 @@ var btnImg = [
 
 function requiredName(HeroesAll) {
     var myHero = HeroesAll;
-    //function requiredName(selectHero) {
+
     var name = document.getElementById('name').value;
     if (name == '') {
         document.getElementById('alertBox').innerHTML = '<h5>Chcesz mi być obcym? Podaj imię i będziemy mogli ruszać dalej.</h5><button class="btn btn-danger" onclick="hideAlertBox()">ok</button>';
@@ -95,19 +106,12 @@ function requiredName(HeroesAll) {
 }
 
 function getName(myHero, name) {
-    //    var name = document.getElementById('name').value;
 
-    //        for (i = 0; i < heroAll.length; i++) {
-    //            if (heroAll[i].id == id) {
-
+    document.getElementById('alertBox').style.marginTop = '-250px';
     document.getElementById('play').innerHTML = '<div class="col-md-11 col-sm-12" id="actionDivAll"><div class="row">' + heroAll[myHero.hid].divStage2 + '<div class="col-sm-8" id="actionDiv"><h4 style="color:gold">' + name + ' ' + heroAll[myHero.hid].description + '</h4><h5>Zacznijmy zabawę. Po prawej stronie masz menu dzięki któremu możesz wybrać swój kolejny krok, rozpocząć nową misję, zakupić cenne towary w sklepie (uwaga, sklep jest często zamknięty, jakiś remont czy coś...) lub skorzystać z drzwi i wyjść z gry.</h5><h5>Po lewej stronie masz opis swojego bohatera. Miej się na baczności, ponieważ z każdą kolejną przygodą Twoje umiejętności mogą się zmieniać.</h5><img src="js/../grafika/forest.jpg" class="forestImg img-responsive"></div><div class="col-sm-4 col-md-2" id="actImgAll">' + mission.div + store.div + close.div + '</div></div></div>';
 
     chooseHero = myHero;
 
-    //    document.getElementById('play').innerHTML = '<div class="col-md-11 col-sm-12" id="actionDivAll"><div class="row">' + heroAll[i].divStage2 + '<div class="col-sm-8" id="actionDiv"><h4 style="color:gold">' + name + ' ' + heroAll[i].description + '</h4><h5>Zacznijmy zabawę. Po prawej stronie masz menu dzięki któremu możesz wybrać swój kolejny krok, rozpocząć nową misję, zakupić cenne towary w sklepie (uwaga, sklep jest często zamknięty, jakiś remont czy coś...) lub skorzystać z drzwi i wyjść z gry.</h5><h5>Po lewej stronie masz opis swojego bohatera. Miej się na baczności, ponieważ z każdą kolejną przygodą Twoje umiejętności mogą się zmieniać.</h5><img src="js/../grafika/forest.jpg" class="forestImg img-responsive"></div><div class="col-sm-4 col-md-2" id="actImgAll">' + btnImg[0].div + btnImg[1].div + btnImg[2].div + '</div></div></div>'
-
-    //            }
-    //        }
 }
 var chooseHero = '';
 var chooseMonster = '';
@@ -129,10 +133,7 @@ function newMission(chooseHero) {
 
 }
 
-
-//    function atack(id) {
-function atack(chooseHero, chooseMonster, spell = '') {
-
+function atack(chooseHero, chooseMonster, SpellAll = '') {
     var heroDefence = chooseHero.defence;
     var heroAttack = chooseHero.attack
     var heroLife = chooseHero.life;
@@ -144,62 +145,123 @@ function atack(chooseHero, chooseMonster, spell = '') {
     var cardSpeed = cards[chooseMonster].speed;
     var cardTitle = cards[chooseMonster].title;
 
-    if (spell == '') {
-        var extraCardDamage = 0;
-        var extraHeroDamage = 0;
-        if (heroSpeed > cardSpeed) {
-            extraHeroDamage = heroSpeed / cardSpeed;
-        } else {
-            extraCardDamage = cardSpeed / heroSpeed;
-        }
-        
-        //        var cardDamage = Math.abs(cardDefence - heroAttack); //obliczenie róznicy obrona - atak
-        var cardDamage = Math.abs(cardDefence - heroAttack - extraHeroDamage); //obliczenie róznicy obrona - atak
 
-        
+    var extraCardDamage = 0;
+    var extraHeroDamage = 0;
 
-        var newCardLife = cardLife - cardDamage - extraHeroDamage;
-//      var newCardLife = cardLife - cardDamage;
-
-        chooseMonster.life = newCardLife;
-
-        document.getElementById('monsterLife').innerText = 'życie: ' + newCardLife;
-
-
-        // bohater
-        var heroDamage = Math.abs(heroDefence - cardAttack - extraCardDamage);
-        //        var heroDamage = Math.abs(heroDefence - cardAttack);
-//        var newHeroLife = heroLife - heroDamage - extraCardDamage;
-        var newHeroLife = heroLife - heroDamage;
-        chooseHero.life = newHeroLife;
-
-        document.getElementById('heroLife').innerHTML = '<p>życie: ' + newHeroLife + '</p>';
-
-        document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p><p>Obrażenia zadane przez ' + cardTitle + 'a ' + heroDamage + '  </p>';
-
-
-
-
-        if (newCardLife == 0 || newCardLife < 0) {
-            document.getElementById('actionDiv').innerHTML += '<h3 style="color:gold">Wygrałeś!</h3>';
-            console.log('wygrałeś');
-            var score = 'win'
-            afterBattle(chooseHero, score);
-        } else if (newHeroLife == 0 || newHeroLife < 0) {
-            document.getElementById('actionDiv').innerHTML += '<h3>Przegrałeś!</h3>';
-            console.log('przegrałeś');
-            var score = 'loose';
-            afterBattle(chooseHero, score);
-
-        }
+    if (heroSpeed > cardSpeed) {
+        extraHeroDamage = heroSpeed / cardSpeed;
     } else {
-        console.log('nieS')
+        extraCardDamage = cardSpeed / heroSpeed;
     }
 
+    if (SpellAll == '') {
+
+
+        //        if (cardTitle == 'Pusty pokój') {
+        //            document.getElementById('actionDiv').innerHTML += '<h3 style="color:gold">Twoje nagrody!</h3>';
+        //        }
+
+
+        var cardDamage = Math.abs(cardDefence - heroAttack - extraHeroDamage); //obliczenie róznicy obrona - atak
+
+        //        console.log(cardDamage);  
+        if (cardDamage == 0) {
+            heroDamage = 2;
+        }
+
+        var newCardLife = cardLife - cardDamage;
+
+
+
+        document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
+
+    } else {
+        var newHeroLife = heroLife;
+
+        if (SpellAll.spellId == 'whirl') {
+            var newCardLife = cardLife - SpellAll.attack;
+
+            document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 2pkt do obrażenia ' + cardTitle;
+            closeSpellBook();
+            mana = chooseHero.mana - 3;
+
+
+        } else if (SpellAll.spellId == 'blackMagic') {
+            newCardLife = cardLife;
+            heroLife = heroLife + SpellAll.life;
+            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 3pkt do życia bohatera';
+            closeSpellBook();
+            mana = chooseHero.mana - 4;
+
+        } else if (SpellAll.spellId == 'nature') {
+            newCardLife = cardLife;
+            heroLife = heroLife + SpellAll.life;
+            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 4pkt do życia bohatera';
+            closeSpellBook();
+            mana = chooseHero.mana - 2;
+
+        } else if (SpellAll.spellId == 'hurt') {
+            var newCardLife = cardLife - SpellAll.attack;
+
+            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 1pkt do życia bohatera';
+            closeSpellBook();
+            mana = chooseHero.mana - 2;
+
+        } else if (SpellAll.spellId == 'blackMagic2') {
+            var newCardLife = cardLife - SpellAll.attack;
+
+            document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 5pkt do obrażenia ' + cardTitle;
+            closeSpellBook();
+            mana = chooseHero.mana - 5;
+
+        } else if (SpellAll.spellId == 'flash') {
+            var newCardLife = cardLife - SpellAll.attack;
+            
+            document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 3pkt do obrażenia ' + cardTitle;
+            closeSpellBook();
+            mana = chooseHero.mana - 3;
+
+        }
+    }
+    // potwor
+    var heroDamage = Math.abs(heroDefence - cardAttack - extraCardDamage);
+    if (heroDamage == 0) {
+        heroDamage = 2;
+    }
+    //    var newHeroLife = heroLife - heroDamage;
+    var newHeroLife = heroLife - heroDamage;
+
+
+
+    document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez ' + cardTitle + 'a ' + heroDamage + '  </p>';
+
+
+    document.getElementById('monsterLife').innerText = 'życie: ' + newCardLife;
+    document.getElementById('heroLife').innerHTML = '<p>życie: ' + newHeroLife + '</p>';
+    document.getElementById('mana').innerHTML = '<p>mana: ' + mana + '</p>';
+    
+    
+    if (newCardLife == 0 || newCardLife < 0) {
+        document.getElementById('actionDiv').innerHTML += '<h3 style="color:gold">Wygrałeś!</h3>';
+        console.log('wygrałeś');
+        var score = 'win'
+        afterBattle(chooseHero, chooseMonster, score);
+    } else if (newHeroLife == 0 || newHeroLife < 0) {
+        document.getElementById('actionDiv').innerHTML += '<h3>Przegrałeś!</h3>';
+        console.log('przegrałeś');
+        var score = 'loose';
+        afterBattle(chooseHero, chooseMonster, score);
+
+    }
+    chooseHero.life = newHeroLife;
+    cards[chooseMonster].life = newCardLife;
 }
 
-function afterBattle(chooseHero, score) {
+function afterBattle(chooseHero, chooseMonster, score) {
     chooseHero.life = 10;
+    chooseHero.mana = chooseHero.mana;
+
     if (score == 'win') {
 
         document.getElementById('play').innerHTML = '<div class="col-md-11 col-sm-12" id="actionDivAll"><div class="row">' + heroAll[chooseHero.hid].divStage2 + '<div class="col-sm-8" id="actionDiv"><h2>Brawo! Wygrałeś! </h2><h3>To co kolejna misja czy zimny sok z feremntowanych owoców w sklepie?</h3></div><div class="col-sm-4 col-md-2" id="actImgAll">' + mission.div + store.div + close.div + '</div></div></div>';
@@ -211,30 +273,23 @@ function afterBattle(chooseHero, score) {
 function spellBookFn() {
     document.getElementById('spellBookAlertBox').style.marginTop = '5%';
     document.getElementById('actImgAll').style.visibility = 'hidden';
+
+
+    for (i = 0; i < spell.length - 3; i++) {
+        document.getElementById('leftSideSpellBook').innerHTML += spell[i].div;
+        //        
+    };
+    for (i = 3; i < spell.length; i++) {
+        document.getElementById('spellRightSideSpellBook').innerHTML += spell[i].div;
+    }
+
 }
 //zamykanie księgi zaklęć
 function closeSpellBook() {
     document.getElementById('spellBookAlertBox').style.marginTop = '-550px';
+    document.getElementById('leftSideSpellBook').innerHTML = '<div></div>';
+    document.getElementById('spellRightSideSpellBook').innerHTML = '<div></div>';
     document.getElementById('actImgAll').style.visibility = 'visible';
-}
-// funkcje dla czarów
-function spell(id) {
-
-    closeSpellBook();
-    console.log(value);
-    //    if (id == 'whirl') {
-    //
-    //    } else if (id == 'blackMagic') {
-    //
-    //    } else if (id == 'nature') {
-    //
-    //    } else if (id == 'eye') {
-    //
-    //    } else if (id == 'blackMagic2') {
-    //
-    //    } else if (id == 'flash') {
-    //
-    //    }
 }
 
 function showActText(id) {
@@ -285,17 +340,17 @@ function stay() {
 }
 /**funkcja chowania alertBoxa */
 function hideAlertBox() {
-    document.getElementById('alertBox').style.marginTop = '-250px';
+    document.getElementById('alertBox').style.marginTop = '-1000px';
 }
 
 function getStore() {
     document.getElementById('alertBox').style.marginTop = '5%';
-    document.getElementById('alertBox').innerHTML = '<h3>Przepraszamy!</h3><h4>Sklep nieczynny</h4><h5>Wróć później</h5><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
+    document.getElementById('alertBox').innerHTML = '<h3>Przepraszamy!</h3><h4>Sklep nieczynny</h4><h5>Nieznośnie górskie trolle napadły na sklepikarza parę dni temu. Ledwo się handlarz wykaraskał, a pojawił się smutny Ent i zabrał wszystko czego trolle nie rozkradły. Mówił coś o jakichś niespłaconych ratach czy co. Minie sporo czasu nim przyjadą karawany z nowymi towarami, a nasz sklepikarz poukłada wszystko na nowo. Wróć później</h5><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
 }
 
 function runAwayFn() {
 
     chooseHero.life = 10;
-    
+
     document.getElementById('play').innerHTML = '<div class="col-md-11 col-sm-12" id="actionDivAll"><div class="row">' + heroAll[chooseHero.hid].divStage2 + '<div class="col-sm-8" id="actionDiv"><h2>Nie jest Tobie wstyd? Uciekłeś!</h2><h3>Pójdziesz popłakać w kącie czy szykujesz się do kolejnej misji?</h3></div><div class="col-sm-4 col-md-2" id="actImgAll">' + mission.div + store.div + close.div + '</div></div></div>';
 }
