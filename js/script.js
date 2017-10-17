@@ -65,7 +65,7 @@ function SpellAll(spellId, name, mana, attack, defence, life, div) {
     this.div = div
 }
 var spell = [
-    whirl = new SpellAll('whirl', 'wir zniszczenia', 2, 2, 0, 0, '<p><strong>wir zniszczenia </strong></p><img src="grafika/spellWhirl.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, whirl)"><p>Zadaje przeciwnikowi 2pkt uszkodzenia, 2 mana</p>'),
+    whirl = new SpellAll('whirl', 'wir zniszczenia', 2, 2, 0, 0, '<p><strong>wir zniszczenia </strong></p><img src="grafika/spellWhirl.jpg" id="' + this + '" onclick="atack(newObjectChooseHero, newObjectChooseCard, whirl)"><p>Zadaje przeciwnikowi 2pkt uszkodzenia, 2 mana</p>'),
     blackMagic = new SpellAll('blackMagic', 'przywołanie mocy', 4, 0, 0, 3, '<p><strong>przywołanie mocy</strong></p><img src="grafika/spellBlackMagic.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, blackMagic)"><p>Dodaje 3pkt do życia bohatera, 4 mana</p>'),
     nature = new SpellAll('nature', 'Uzdrowienie', 2, 0, 0, 2, '<p><strong>Uzdrownie</strong></p><img src="grafika/spellNature.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, nature)"><p>Dodaje 2pkt życia bohatera, 2 mana</p>'),
     hurt = new SpellAll('hurt', 'uszkodzenie', 2, 1, 0, 0, '<p><strong>uszkodzenie</strong></p><img src="grafika/spellEye.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, hurt)"><p>Uszkodź przeciwnika 1pkt, 2 mana</p>'),
@@ -310,18 +310,23 @@ function atack(newObjectChooseHero, newObjectChooseCard, SpellAll = '') {
     } else {
         var newHeroLife = heroLife;
 
-
+        console.log('cokolwiek');
+        
+        
         if (SpellAll.spellId == 'whirl') {
             closeSpellBook();
-            if (heroMana >= 3) {
+            if (heroMana >= SpellAll.mana) {
                 var newCardLife = cardLife - SpellAll.attack;
 
                 document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 2pkt do obrażenia ' + cardTitle;
 
-                //                leftMana = chooseHero.mana - 3;
-                leftMana = newObjectChooseHero.mana - 3;
+              
+                leftMana = heroMana - SpellAll.mana;
                 document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
-
+                newObjectChooseHero.mana = leftMana;
+                
+                
+                console.log('cokolwiek');   
             } else {
                 var newCardLife = cardLife;
                 document.getElementById('alertBox').style.marginTop = '5%';
@@ -390,8 +395,6 @@ function atack(newObjectChooseHero, newObjectChooseCard, SpellAll = '') {
     document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez ' + cardTitle + 'a ' + heroDamage + '  </p>';
     document.getElementById('monsterLife').innerText = 'życie: ' + newObjectChooseCard.life;
     document.getElementById('heroLife').innerHTML = '<p>życie: ' + newObjectChooseHero.life + '</p>';
-//    document.getElementById('monsterLife').innerText = 'życie: ' + newCardLife;
-//    document.getElementById('heroLife').innerHTML = '<p>życie: ' + newHeroLife + '</p>';
 
 
 
@@ -412,9 +415,6 @@ function atack(newObjectChooseHero, newObjectChooseCard, SpellAll = '') {
 
 
 function afterBattle(chooseHero, chooseMonster, score) {
-
-    chooseMonster.life = 10;
-    chooseHero.life = 10;
 
     if (score == 'win') {
 
