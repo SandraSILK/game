@@ -43,15 +43,15 @@ function CardsAll(title, defence, attack, speed, life, img, story) {
 }
 
 var cards = [
-    troll = new CardsAll('Troll', 5, 4, 5, 10, 'js/../grafika/troll.jpg', 'Jesteś w grocie, pod Twoimi stopami wala się mnóstwo kości. Odrzucasz jedną z czaszek, która odbija się z głuchym łoskotem do wnętrza jamy. Hałas budzi uśpionego stwora, nadchodzi Troll!'),
-    mudMonster = new CardsAll('Błotny Potwór', 4, 6, 4, 10, 'js/../grafika/blotny_potwor.png', 'Znajdujesz się daleko poza miastem. Jaskinie, la sy, bagna i wstrętny mlaskający dźwięk. Patrzysz, a zza głazu wyłania się Błotny Potwór.'),
-    vampire = new CardsAll('Wampir', 5, 6, 8, 10, 'js/../grafika/vampire.jpg', 'Znajdujesz się w opustoszałym domu, gdzie słyszysz płacz dziecka. Rozglądasz się uważnie po ciemnych pokojach aż nagle go dostrzegasz. Wampir!'),
-    cyclops = new CardsAll('Cyklop', 7, 4, 4, 10, 'js/../grafika/cyklop.jpg', 'Idąc wąską przełęczą, o mało nie zabija Ciebie głaz. Podnosisz wzrok, a Twoim oczom ukazuje się jednooka bestia, to cyklop!'),
-    gin = new CardsAll('Dżin', 9, 5, 8, 10, 'js/../grafika/gin.jpg', 'Czujesz jak żar leje się z nieba, idziesz resztkami sił. Nagle w zamieci piaskowej dostrzegasz majaczącą niebieską plamę, czy to pustynna oaza? Nie! To śmiertelnie niebezpieczny dżin!'),
-    centur = new CardsAll('Centaur', 5, 8, 7, 10, 'js/../grafika/centaur.jpg', 'Wiedziałeś, że schodzenie z leśnego szlaku to był kiepski pomysł, jednak te jagody wyglądały tak smakowicie. Gdy wkładasz kolejny owoc do ust zagradza Tobie drogę majestatyczny centaur. Przygotuj się do walki.'),
+//    troll = new CardsAll('Troll', 5, 4, 5, 10, 'js/../grafika/troll.jpg', 'Jesteś w grocie, pod Twoimi stopami wala się mnóstwo kości. Odrzucasz jedną z czaszek, która odbija się z głuchym łoskotem do wnętrza jamy. Hałas budzi uśpionego stwora, nadchodzi Troll!'),
+//    mudMonster = new CardsAll('Błotny Potwór', 4, 6, 4, 10, 'js/../grafika/blotny_potwor.png', 'Znajdujesz się daleko poza miastem. Jaskinie, la sy, bagna i wstrętny mlaskający dźwięk. Patrzysz, a zza głazu wyłania się Błotny Potwór.'),
+//    vampire = new CardsAll('Wampir', 5, 6, 8, 10, 'js/../grafika/vampire.jpg', 'Znajdujesz się w opustoszałym domu, gdzie słyszysz płacz dziecka. Rozglądasz się uważnie po ciemnych pokojach aż nagle go dostrzegasz. Wampir!'),
+//    cyclops = new CardsAll('Cyklop', 7, 4, 4, 10, 'js/../grafika/cyklop.jpg', 'Idąc wąską przełęczą, o mało nie zabija Ciebie głaz. Podnosisz wzrok, a Twoim oczom ukazuje się jednooka bestia, to cyklop!'),
+//    gin = new CardsAll('Dżin', 9, 5, 8, 10, 'js/../grafika/gin.jpg', 'Czujesz jak żar leje się z nieba, idziesz resztkami sił. Nagle w zamieci piaskowej dostrzegasz majaczącą niebieską plamę, czy to pustynna oaza? Nie! To śmiertelnie niebezpieczny dżin!'),
+//    centur = new CardsAll('Centaur', 5, 8, 7, 10, 'js/../grafika/centaur.jpg', 'Wiedziałeś, że schodzenie z leśnego szlaku to był kiepski pomysł, jednak te jagody wyglądały tak smakowicie. Gdy wkładasz kolejny owoc do ust zagradza Tobie drogę majestatyczny centaur. Przygotuj się do walki.'),
     hellishHorse = new CardsAll('Piekielny Rumak', 5, 7, 6, 10, 'js/../grafika/hellishHorse.jpg', 'Sądzisz, że w życiu wiele już widziałeś dlatego rad jesteś, że nareszcie może odpocząć w tym pustym zagajniku. W momencie, gdy wyciągasz wygodnie nogi oparty o młodą brzózkę dochodzi Ciebie swąd spalenizny. Odwracasz się i dostrzegasz płonącego ogiera, to rumak samego diabła, to Piekielny Rumak! '),
-    harpy = new CardsAll('Harpia', 6, 9, 7, 10, 'js/../grafika/harpy.jpg', 'Te tereny nie wyglądają przyjaźnie. Kilka sępów krąży nad Twoją głową już od dłuższego czasu, a noc nadchodzi coraz szybciej. Nagle słyszysz przerażający skowyt, a na policzku czujesz podmuch wiatru ostry niczym sztylet. Zaatakowała Ciebie harpia, uważaj jest przerażająco szybka.'),
-    sirena = new CardsAll('Syrena', 9, 4, 8, 10, 'js/../grafika/siren.jpg', 'Pływając po bezkresnych oceanach odpierając co jakiś czas atak piratów, słyszysz piękny śpiew, który mami Ciebie i obezwładnia. O mało nie wypadasz poza burtę, w ostatniej chwili powstrzymuje Ciebie marynarz. Strzeż się, to syrena niosąca zgubę.'),
+//    harpy = new CardsAll('Harpia', 6, 9, 7, 10, 'js/../grafika/harpy.jpg', 'Te tereny nie wyglądają przyjaźnie. Kilka sępów krąży nad Twoją głową już od dłuższego czasu, a noc nadchodzi coraz szybciej. Nagle słyszysz przerażający skowyt, a na policzku czujesz podmuch wiatru ostry niczym sztylet. Zaatakowała Ciebie harpia, uważaj jest przerażająco szybka.'),
+//    sirena = new CardsAll('Syrena', 9, 4, 8, 10, 'js/../grafika/siren.jpg', 'Pływając po bezkresnych oceanach odpierając co jakiś czas atak piratów, słyszysz piękny śpiew, który mami Ciebie i obezwładnia. O mało nie wypadasz poza burtę, w ostatniej chwili powstrzymuje Ciebie marynarz. Strzeż się, to syrena niosąca zgubę.'),
 //    emptyRoom = new CardsAll('Pusty pokój', 0, 0, 0, 0, 'js/../grafika/treasure.jpg', 'Błądzisz już tak kilka godzin, żadnego wampira, licza, nawet pająka! Nic, kompletna posucha. Znudzony nic nierobieniem wchodzisz do rozwalającego się domu, znudzony siadasz na zakurzonym fotelu. W kącie dostrzegasz stojącą skrzynię ze zdobnymi okuciami. Jednym porządnym szarpnięciem otwierasz wieko skrzyni. Na Twoich ustach pojawia się uśmiech, to złoto i kilka innych cennych rzeczy. To będzie przyjemny wieczór w gospodzie Pod Bezgłowym Kogutem.')
 ]
 /**magia**/
@@ -68,7 +68,7 @@ var spell = [
     whirl = new SpellAll('whirl', 'wir zniszczenia', 2, 2, 0, 0, '<p><strong>wir zniszczenia </strong></p><img src="grafika/spellWhirl.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, whirl)"><p>Zadaje przeciwnikowi 2pkt uszkodzenia, 2 mana</p>'),
     blackMagic = new SpellAll('blackMagic', 'przywołanie mocy', 4, 0, 0, 3, '<p><strong>przywołanie mocy</strong></p><img src="grafika/spellBlackMagic.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, blackMagic)"><p>Dodaje 3pkt do życia bohatera, 4 mana</p>'),
     nature = new SpellAll('nature', 'Uzdrowienie', 2, 0, 0, 2, '<p><strong>Uzdrownie</strong></p><img src="grafika/spellNature.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, nature)"><p>Dodaje 2pkt życia bohatera, 2 mana</p>'),
-    hurt = new SpellAll('hurt', 'uszkodzenie', 2, 1, 0, 0, '<p><strong>oślepienie</strong></p><img src="grafika/spellEye.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, hurt)"><p>Uszkodź przeciwnika 1pkt, 2 mana</p>'),
+    hurt = new SpellAll('hurt', 'uszkodzenie', 2, 1, 0, 0, '<p><strong>uszkodzenie</strong></p><img src="grafika/spellEye.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, hurt)"><p>Uszkodź przeciwnika 1pkt, 2 mana</p>'),
     blackMagic2 = new SpellAll('blackMagic2', 'Pradawne Zło', 5, 5, 0, 0, '<p><strong>pradawne zło</strong></p><img src="grafika/spellBlackMagic2.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, blackMagic2)"><p>Zadaje przeciwnikowi 5pkt uszkodzenia, 5 mana</p>'),
     flash = new SpellAll('flash', 'piorun', 3, 2, 0, 0, '<p><strong>piorun</strong></p><img src="grafika/spellFlash.jpg" id="' + this + '" onclick="atack(chooseHero, chooseMonster, flash)"><p>Zadaje przeciwnikowi 2pkt uszkodzenia, 3 mana</p>')
 ]
@@ -88,7 +88,7 @@ var btnImg = [
     mission = new btnImg('mission', 'js/../grafika/mission.jpg', 'newMission(chooseHero)', 'showActText(id)', 'hideActText(id)', 'activeText0', 'nowa misja'),
     store = new btnImg('store', 'js/../grafika/shop.jpg', 'getStore()', 'showActText(id)', 'hideActText(id)', 'activeText1', 'sklep'),
     close = new btnImg('close', 'js/../grafika/door.jpg', 'closeFn()', 'showActText(id)', 'hideActText(id)', 'activeText2', 'wyjdź z gry'),
-    attack = new btnImg('attack', 'js/../grafika/walcz.png', 'atack(chooseHero, chooseMonster)', 'showActText(id)', 'hideActText(id)', 'activeText3', 'atakuj!'),
+    attack = new btnImg('attack', 'js/../grafika/walcz.png', 'atack(newObjectChooseHero, newObjectChooseCard)', 'showActText(id)', 'hideActText(id)', 'activeText3', 'atakuj!'),
     spellBook = new btnImg('spellBook', 'js/../grafika/magic.png', 'spellBookFn()', 'showActText(id)', 'hideActText(id)', 'activeText4', 'księga zaklęć'),
     runAway = new btnImg('runAway', 'js/../grafika/uciekaj.png', 'runAwayFn()', 'showActText(id)', 'hideActText(id)', 'activeText5', 'uciekaj')
 ]
@@ -121,7 +121,10 @@ function newMission(chooseHero) {
     actImgAll - boczne menu <div class="col-sm-2" id="actImgAll"></div>*/
 
     var cardNumber = Math.round(Math.random() * (cards.length - 1));
-    chooseMonster = cardNumber;
+
+    chooseMonster = cards[cardNumber];
+    newObjectChooseHero = JSON.parse(JSON.stringify(chooseHero));
+    newObjectChooseCard = JSON.parse(JSON.stringify(chooseMonster));
 
     document.getElementById('actImgAll').innerHTML = '<div class="col-sm-4 col-md-2" id="actImgAll">' + attack.div + spellBook.div + runAway.div + '</div>';
 
@@ -131,17 +134,156 @@ function newMission(chooseHero) {
 
 }
 
-function atack(chooseHero, chooseMonster, SpellAll = '') {
-    var heroDefence = chooseHero.defence;
-    var heroAttack = chooseHero.attack
-    var heroLife = chooseHero.life;
-    var heroSpeed = chooseHero.speed;
+//function atack(chooseHero, chooseMonster, SpellAll = '') {
+//    var heroDefence = chooseHero.defence;
+//    var heroAttack = chooseHero.attack
+//    var heroLife = chooseHero.life;
+//    var heroSpeed = chooseHero.speed;
+//    var heroMana = chooseHero.mana;
+//
+//    var cardDefence = chooseMonster.defence;
+//    var cardAttack = chooseMonster.attack;
+//    var cardLife = chooseMonster.life;
+//    var cardSpeed = chooseMonster.speed;
+//    var cardTitle = chooseMonster.title;
+//
+//
+//    var extraCardDamage = 0;
+//    var extraHeroDamage = 0;
+//
+//    if (heroSpeed > cardSpeed) {
+//        extraHeroDamage = heroSpeed / cardSpeed;
+//    } else {
+//        extraCardDamage = cardSpeed / heroSpeed;
+//    }
+//
+//    if (SpellAll == '') {
+//
+//        var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
+//
+//        if (cardDamage == 0) {
+//            heroDamage = 2;
+//        }
+//
+//        var newCardLife = cardLife - cardDamage;
+//
+//        document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '.</p>';
+//
+//    } else {
+//        var newHeroLife = heroLife;
+//
+//
+//        if (SpellAll.spellId == 'whirl') {
+//            closeSpellBook();
+//            if (heroMana >= 3) {
+//                var newCardLife = cardLife - SpellAll.attack;
+//
+//                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 2pkt do obrażenia ' + cardTitle;
+//              
+//                leftMana = chooseHero.mana - 3;
+//                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+////                chooseHero.mana = leftMana;
+//            } else {
+//                var newCardLife = cardLife;
+//                document.getElementById('alertBox').style.marginTop = '5%';
+//                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.</h3><h3>Pozostaje Tobie tylko atakować</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
+//            }
+//
+//
+//
+//        } else if (SpellAll.spellId == 'blackMagic') {
+//            newCardLife = cardLife;
+//            heroLife = heroLife + SpellAll.life;
+//            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 3pkt do życia bohatera';
+//            closeSpellBook();
+//            leftMana = chooseHero.mana - 4;
+//            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+//            chooseHero.mana = leftMana;
+//
+//        } else if (SpellAll.spellId == 'nature') {
+//            newCardLife = cardLife;
+//            heroLife = heroLife + SpellAll.life;
+//            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 4pkt do życia bohatera';
+//            closeSpellBook();
+//            leftMana = chooseHero.mana - 2;
+//            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+//            chooseHero.mana = leftMana;
+//
+//        } else if (SpellAll.spellId == 'hurt') {
+//            var newCardLife = cardLife - SpellAll.attack;
+//
+//            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 1pkt do życia bohatera';
+//            closeSpellBook();
+//            leftMana = chooseHero.mana - 2;
+//            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+//            chooseHero.mana = leftMana;
+//
+//        } else if (SpellAll.spellId == 'blackMagic2') {
+//            var newCardLife = cardLife - SpellAll.attack;
+//
+//            document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 5pkt do obrażenia ' + cardTitle;
+//            closeSpellBook();
+//            leftMana = chooseHero.mana - 5;
+//            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+//            chooseHero.mana = leftMana;
+//
+//        } else if (SpellAll.spellId == 'flash') {
+//            var newCardLife = cardLife - SpellAll.attack;
+//
+//            document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 3pkt do obrażenia ' + cardTitle;
+//            closeSpellBook();
+//            leftMana = chooseHero.mana - 3;
+//            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+////            chooseHero.mana = leftMana;
+//
+//        }
+//    }
+//
+//    // potwor
+//    var heroDamage = Math.round(Math.abs(heroDefence - cardAttack - extraCardDamage));
+//    if (heroDamage == 0) {
+//        heroDamage = 2;
+//    }
+//    var newHeroLife = heroLife - heroDamage;
+//
+//
+//    document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez ' + cardTitle + 'a ' + heroDamage + '  </p>';
+//    document.getElementById('monsterLife').innerText = 'życie: ' + newCardLife;
+//    document.getElementById('heroLife').innerHTML = '<p>życie: ' + newHeroLife + '</p>';
+//
+//
+// 
+//    chooseHero.life = newHeroLife;
+//    chooseMonster.life = newCardLife;
+//    
+//    if (newCardLife <= 0) {
+//        document.getElementById('actionDiv').innerHTML += '<h3 style="color:gold">Wygrałeś!</h3>';
+//        console.log('wygrałeś');
+//        var score = 'win';
+//        afterBattle(chooseHero, chooseMonster, score);
+//    } else if (newHeroLife <= 0) {
+//        document.getElementById('actionDiv').innerHTML += '<h3>Przegrałeś!</h3>';
+//        console.log('przegrałeś');
+//        var score = 'loose';
+//        afterBattle(chooseHero, chooseMonster, score);
+//
+//    }
+//
+//}
 
-    var cardDefence = cards[chooseMonster].defence;
-    var cardAttack = cards[chooseMonster].attack;
-    var cardLife = cards[chooseMonster].life;
-    var cardSpeed = cards[chooseMonster].speed;
-    var cardTitle = cards[chooseMonster].title;
+function atack(newObjectChooseHero, newObjectChooseCard, SpellAll = '') {
+
+    var heroDefence = newObjectChooseHero.defence;
+    var heroAttack = newObjectChooseHero.attack
+    var heroLife = newObjectChooseHero.life;
+    var heroSpeed = newObjectChooseHero.speed;
+    var heroMana = newObjectChooseHero.mana;
+
+    var cardDefence = newObjectChooseCard.defence;
+    var cardAttack = newObjectChooseCard.attack;
+    var cardLife = newObjectChooseCard.life;
+    var cardSpeed = newObjectChooseCard.speed;
+    var cardTitle = newObjectChooseCard.title;
 
 
     var extraCardDamage = 0;
@@ -153,161 +295,7 @@ function atack(chooseHero, chooseMonster, SpellAll = '') {
         extraCardDamage = cardSpeed / heroSpeed;
     }
 
-    if (SpellAll != '') {
-
-        var newHeroLife = heroLife;
-
-        if (SpellAll.spellId == 'whirl') {
-            if (chooseHero.mana >= whirl.mana) {
-                var newCardLife = cardLife - SpellAll.attack;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 2pkt do obrażenia ' + cardTitle;
-                closeSpellBook();
-                leftMana = chooseHero.mana - whirl.mana;
-                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
-                chooseHero.mana = leftMana;
-            } else {
-                closeSpellBook();
-                document.getElementById('alertBox').style.marginTop = '5%';
-                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.Pozostaje Tobie jedynie atak</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
-                var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
-
-                if (cardDamage == 0) {
-                    heroDamage = 2;
-                }
-
-                var newCardLife = cardLife - cardDamage;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
-            }
-
-        } else if (SpellAll.spellId == 'blackMagic') {
-            if (chooseHero.mana >= blackMagic.mana) {
-                newCardLife = cardLife;
-                heroLife = heroLife + SpellAll.life;
-                document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 3pkt do życia bohatera';
-                closeSpellBook();
-                leftMana = chooseHero.mana - blackMagic.mana;
-                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
-                chooseHero.mana = leftMana;
-            } else {
-                closeSpellBook();
-                document.getElementById('alertBox').style.marginTop = '5%';
-                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.Pozostaje Tobie jedynie atak</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
-                var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
-
-                if (cardDamage == 0) {
-                    heroDamage = 2;
-                }
-
-                var newCardLife = cardLife - cardDamage;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
-            }
-
-
-        } else if (SpellAll.spellId == 'nature') {
-            if (chooseHero.mana >= nature.mana) {
-                newCardLife = cardLife;
-                heroLife = heroLife + SpellAll.life;
-                document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 4pkt do życia bohatera';
-                closeSpellBook();
-                leftMana = chooseHero.mana - nature.mana;
-                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
-                chooseHero.mana = leftMana;
-            } else {
-                closeSpellBook();
-                document.getElementById('alertBox').style.marginTop = '5%';
-                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.Pozostaje Tobie jedynie atak</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
-                var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
-
-                if (cardDamage == 0) {
-                    heroDamage = 2;
-                }
-
-                var newCardLife = cardLife - cardDamage;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
-            }
-
-
-        } else if (SpellAll.spellId == 'hurt') {
-            if (chooseHero.mana >= hurt.mana) {
-                var newCardLife = cardLife - SpellAll.attack;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 1pkt do życia bohatera';
-                closeSpellBook();
-                leftMana = chooseHero.mana - hurt.mana;
-                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
-                chooseHero.mana = leftMana;
-            } else {
-                closeSpellBook();
-                document.getElementById('alertBox').style.marginTop = '5%';
-                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.Pozostaje Tobie jedynie atak</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
-                var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
-
-                if (cardDamage == 0) {
-                    heroDamage = 2;
-                }
-
-                var newCardLife = cardLife - cardDamage;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
-            }
-
-
-        } else if (SpellAll.spellId == 'blackMagic2') {
-            if (chooseHero.mana >= blackMagic2.mana) {
-                var newCardLife = cardLife - SpellAll.attack;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 5pkt do obrażenia ' + cardTitle;
-                closeSpellBook();
-                leftMana = chooseHero.mana - blackMagic2.mana;
-                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
-                chooseHero.mana = leftMana;
-            } else {
-                closeSpellBook();
-                document.getElementById('alertBox').style.marginTop = '5%';
-                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.Pozostaje Tobie jedynie atak</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
-                var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
-
-                if (cardDamage == 0) {
-                    heroDamage = 2;
-                }
-
-                var newCardLife = cardLife - cardDamage;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
-            }
-
-
-        } else if (SpellAll.spellId == 'flash') {
-            if (chooseHero.mana >= flash.mana) {
-                var newCardLife = cardLife - SpellAll.attack;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 3pkt do obrażenia ' + cardTitle;
-                closeSpellBook();
-                leftMana = chooseHero.mana - flash.mana;
-                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
-                chooseHero.mana = leftMana;
-            } else {
-                closeSpellBook();
-                document.getElementById('alertBox').style.marginTop = '5%';
-                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.Pozostaje Tobie jedynie atak</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
-                var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
-
-                if (cardDamage == 0) {
-                    heroDamage = 2;
-                }
-
-                var newCardLife = cardLife - cardDamage;
-
-                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
-            }
-
-        }
-
-    } else if (SpellAll == '') {
+    if (SpellAll == '') {
 
         var cardDamage = Math.round(Math.abs(cardDefence - heroAttack - extraHeroDamage));
 
@@ -317,8 +305,77 @@ function atack(chooseHero, chooseMonster, SpellAll = '') {
 
         var newCardLife = cardLife - cardDamage;
 
-        document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '  </p>';
+        document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez Ciebie ' + cardDamage + '.</p>';
 
+    } else {
+        var newHeroLife = heroLife;
+
+
+        if (SpellAll.spellId == 'whirl') {
+            closeSpellBook();
+            if (heroMana >= 3) {
+                var newCardLife = cardLife - SpellAll.attack;
+
+                document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 2pkt do obrażenia ' + cardTitle;
+
+                //                leftMana = chooseHero.mana - 3;
+                leftMana = newObjectChooseHero.mana - 3;
+                document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+
+            } else {
+                var newCardLife = cardLife;
+                document.getElementById('alertBox').style.marginTop = '5%';
+                document.getElementById('alertBox').innerHTML = '<h3>Masz niewystarczającą ilość many, aby rzucić czar.</h3><h3>Pozostaje Tobie tylko atakować</h3><button class="btn btn-danger" onclick="hideAlertBox()">ok!</button>';
+            }
+
+
+
+        } else if (SpellAll.spellId == 'blackMagic') {
+            newCardLife = cardLife;
+            heroLife = heroLife + SpellAll.life;
+            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 3pkt do życia bohatera';
+            closeSpellBook();
+            leftMana = chooseHero.mana - 4;
+            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+            chooseHero.mana = leftMana;
+
+        } else if (SpellAll.spellId == 'nature') {
+            newCardLife = cardLife;
+            heroLife = heroLife + SpellAll.life;
+            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 4pkt do życia bohatera';
+            closeSpellBook();
+            leftMana = chooseHero.mana - 2;
+            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+            chooseHero.mana = leftMana;
+
+        } else if (SpellAll.spellId == 'hurt') {
+            var newCardLife = cardLife - SpellAll.attack;
+
+            document.getElementById('actionDiv').innerHTML += '<p>Dodatkowe pkt życia dzięki zaklęciu ' + SpellAll.spellId + ' + 1pkt do życia bohatera';
+            closeSpellBook();
+            leftMana = chooseHero.mana - 2;
+            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+            chooseHero.mana = leftMana;
+
+        } else if (SpellAll.spellId == 'blackMagic2') {
+            var newCardLife = cardLife - SpellAll.attack;
+
+            document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 5pkt do obrażenia ' + cardTitle;
+            closeSpellBook();
+            leftMana = chooseHero.mana - 5;
+            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+            chooseHero.mana = leftMana;
+
+        } else if (SpellAll.spellId == 'flash') {
+            var newCardLife = cardLife - SpellAll.attack;
+
+            document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez zaklęcie ' + SpellAll.spellId + ' + 3pkt do obrażenia ' + cardTitle;
+            closeSpellBook();
+            leftMana = chooseHero.mana - 3;
+            document.getElementById('mana').innerHTML = '<p>mana: ' + leftMana + '</p>';
+            //            chooseHero.mana = leftMana;
+
+        }
     }
 
     // potwor
@@ -327,33 +384,37 @@ function atack(chooseHero, chooseMonster, SpellAll = '') {
         heroDamage = 2;
     }
     var newHeroLife = heroLife - heroDamage;
-
+    newObjectChooseHero.life = newHeroLife;
+    newObjectChooseCard.life = newCardLife;
 
     document.getElementById('actionDiv').innerHTML += '<p>Obrażenia zadane przez ' + cardTitle + 'a ' + heroDamage + '  </p>';
-    document.getElementById('monsterLife').innerText = 'życie: ' + newCardLife;
-    document.getElementById('heroLife').innerHTML = '<p>życie: ' + newHeroLife + '</p>';
+    document.getElementById('monsterLife').innerText = 'życie: ' + newObjectChooseCard.life;
+    document.getElementById('heroLife').innerHTML = '<p>życie: ' + newObjectChooseHero.life + '</p>';
+//    document.getElementById('monsterLife').innerText = 'życie: ' + newCardLife;
+//    document.getElementById('heroLife').innerHTML = '<p>życie: ' + newHeroLife + '</p>';
 
 
-    if (newCardLife == 0 || newCardLife < 0) {
+
+    
+
+    if (newCardLife <= 0) {
         document.getElementById('actionDiv').innerHTML += '<h3 style="color:gold">Wygrałeś!</h3>';
-        console.log('wygrałeś');
-        var score = 'win'
+        var score = 'win';
         afterBattle(chooseHero, chooseMonster, score);
-    } else if (newHeroLife == 0 || newHeroLife < 0) {
+    } else if (newHeroLife <= 0) {
         document.getElementById('actionDiv').innerHTML += '<h3>Przegrałeś!</h3>';
-        console.log('przegrałeś');
         var score = 'loose';
         afterBattle(chooseHero, chooseMonster, score);
 
     }
-    chooseHero.life = newHeroLife;
-    cards[chooseMonster].life = newCardLife;
 
 }
 
+
 function afterBattle(chooseHero, chooseMonster, score) {
+
+    chooseMonster.life = 10;
     chooseHero.life = 10;
-    chooseHero.mana = chooseHero.mana;
 
     if (score == 'win') {
 
@@ -444,6 +505,7 @@ function getStore() {
 function runAwayFn() {
 
     chooseHero.life = 10;
+    cards[chooseMonster].life = 10;
 
     document.getElementById('play').innerHTML = '<div class="col-md-11 col-sm-12" id="actionDivAll"><div class="row">' + heroAll[chooseHero.hid].divStage2 + '<div class="col-sm-8" id="actionDiv"><h2>Nie jest Tobie wstyd? Uciekłeś!</h2><h3>Pójdziesz popłakać w kącie czy szykujesz się do kolejnej misji?</h3></div><div class="col-sm-4 col-md-2" id="actImgAll">' + mission.div + store.div + close.div + '</div></div></div>';
 }
