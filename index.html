@@ -7,18 +7,22 @@
     <meta charset='description' content='Gra utrzymana w klimatach fantasy. Fantasy game'>
     <meta charset='author' content='Sandra Ilczuk-Kiełczewska'>
     <meta charset='UTF-8'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     <link rel='stylesheet' href='css/style.css'>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script|Nosifer" rel="stylesheet">
+    <link rel='stylesheet' href='css/fontello-ae6b6c7f/fontello-ae6b6c7f/css/fontello.css'>
 </head>
 
 <body>
-    <div class='container-fluid'>
+    <div id='signature'>
+        <p>AllCreatedBy <a href='http://www.linkedin.com/in/sil-k' target='_blank'>SILK<i class='icon-giraffe'></i></a>&copy; 2017</p>
+    </div>
+    <div id='container'>
         <div id="closeDiv">
             <p>Jesteś pewien, że chcesz zakończyć grę?</p>
             <p>Gra nie zostanie zapisana</p>
-            <input type="button" class="btn btn-success" onclick="stay()" value='zostań'>
-            <input type="button" name="Quit" class="btn btn-danger" style="margin-left:20px" value="wyjdź" onclick="return quitBox('quit');" />
+            <input type="button" onclick="stay()" value='zostań'>
+            <input type="button" name="Quit" style="margin-left:20px" value="wyjdź" onclick="return quitBox('quit');" />
         </div>
         <div id='alertBox'></div>
         <div id='spellBookAlertBox'>
@@ -26,25 +30,21 @@
                 <h3>Księga Magii</h3>
             </div>
             <div id='rightSideSpellBook'>
-                <div id='spellRightSideSpellBook'></div>        
-                    <div style='clear: both'></div>
-                    <p id='closeSpellBook' onclick="closeSpellBook()">wyjdź</p>
+                <div id='spellRightSideSpellBook'></div>
+                <div style='clear: both'></div>
+                <p id='closeSpellBook' onclick="closeSpellBook()">wyjdź</p>
             </div>
         </div>
 
-        <header>
-            <h2 id='header'>Witaj w świecie magii! <button type='button' class='btn btn-danger' title='zagraj!' data-toggle='tooltip' onclick='letsPlay(this)'> zagraj!</button></h2>
+        <header id='header'>
+            <h2>Witaj w świecie magii!</h2> <button type='button' title='zagraj!' onclick='letsPlay(this)'><h2>zagraj!</h2></button>
         </header>
-
-        <div class='row'>
-            <div class='col-sm-12' id='play'></div>
-        </div>
+        <div id='play'></div>
+        
+        <div id='fightDiv'></div>
     </div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src='js/script.js'></script>
+<script src='js/script.js'></script>
 </body>
 
 </html>

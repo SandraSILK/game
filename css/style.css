@@ -3,31 +3,73 @@ body {
     color: #999;
     margin: 0;
     font-family: 'Cinzel';
-    line-height: 25px;
+    text-align: center;
 }
 
 /*font-family: 'Nosifer', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'Cinzel', serif;*/
 
-.container-fluid {
+#container {
     z-index: 100;
     position: relative;
 }
 
 header {
-    margin: 50px 0;
-    text-align: center;
+    margin: 5% 0;
+    letter-spacing: 2px;
+    font-family: 'Cinzel';
 }
 
+button {
+    background-color: #f2412f;
+    border: #f2412f;
+    font-family: 'Cinzel';
+    border-radius: 10px;
+}
+
+button:hover {
+    border: solid 1px gold;
+}
+
+#play,
 #storyDiv {
-    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    margin: auto;
 }
-/* początkowy opis bohaterów*/
+
+#signature {
+    background: #2e2d2d;
+    text-align: left;
+    padding: 1px 0 1px 15px;
+    margin: 0 0 20px 0;
+}
+
+#signature a {
+    color: gold;
+    text-decoration: none;
+}
+
+#signature a:hover,
+#signature a:visited,
+#signature a:active {
+    color: #f2412f
+}
+
+/*wszyscy bohaterowie*/
+
 #aboutHero {
-    float: left;
-    margin-top: 20px;
+    display: inline-block;
+    width: 200px;
+    margin: 20px 20px;
+    padding: 0 10px 0 10px;
 }
+
+#aboutHero h3 {
+    color: gold;
+}
+
 #rycerz:hover,
 #zlodziej:hover,
 #medyk:hover,
@@ -35,16 +77,24 @@ header {
     border: 1px solid gold;
 }
 
-#actionDivAll {   
-    margin: auto;       
-}
-.forestImg, 
-.monsterImg {    
-    border: 1px solid gold;    
-}
+
+
+/*
 #actionDiv {
-    margin: auto;
+    text-align: left;
+    padding: 10px;
+    width: 670px;
+    float: left;
+    background: #484747;
+    margin-bottom: 20px;
 }
+*/
+
+.forestImg,
+.monsterImg {
+    border: 1px solid gold;
+}
+
 #name {
     margin-bottom: 10px;
     background: #333;
@@ -56,18 +106,210 @@ header {
     color: gold;
 }
 
-#mission {
-    margin-top: 20px;
+/*wybrany bohater*/
+
+#hero {
+    float: left;
+    width: 220px;
+    background: #242323;
+    margin-right: 20px;
 }
-#mission,
-#store,
-#close {
-    width: 200px;
-    height: 170px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding-top: 70px;
-    color: gold;
+
+/*oryginalne css*/
+
+/*do 1481*/
+
+/*
+@media (max-width:1481px) {
+    #attack,
+    #spellBook,
+    #runAway {
+        border: 1px solid green;        
+        float: left;
+    } 
+    #actImgAll {
+        width: 1670px;   
+        background: yellow;     
+    }
+}
+*/
+
+@media(min-width:1445px) {
+    #actionDiv {
+        text-align: left;
+        padding: 10px;
+        width: 700px;
+        float: left;
+        background: #484747;
+        margin-bottom: 20px;
+    }
+    #actImgAll {
+        margin-left: 20px;
+        width: 220px;
+        float: left;
+    }
+    #mission,
+    #store,
+    #close {
+        width: 200px;
+        height: 90px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-top: 70px;
+        color: gold;
+    }
+    #activeText0,
+    #activeText1,
+    #activeText2 {
+        margin-top: auto;
+    }
+
+    /*
+    #aboutMonsterDiv {
+        width: 530px;
+        background: black;
+        float: left;
+        text-align: left;
+        padding-right: 10px
+    }
+    #monsterSkills {
+        text-align: center;
+        width: 170px;
+        float: left;
+        background: white;
+    }
+*/
+}
+
+@media(min-width:1149px) and (max-width:1446px) {
+    /*
+    #hero {
+        float: left;
+        width: 220px;
+        background: #242323;
+        margin-right: 20px;
+    }
+*/
+    #actionDiv {
+        text-align: left;
+        padding: 10px;
+        width: 670px;
+        float: left;
+        background: #484747;
+        margin-bottom: 20px;
+    }
+    #actImgAll {
+        margin: auto;
+        width: 670px;
+        margin: 20px auto;
+    }
+    #mission,
+    #store,
+    #close {
+        width: 200px;
+        height: 167px;
+        float: left;
+        margin-left: 20px;
+        text-align: center;
+    }
+    #activeText0,
+    #activeText1,
+    #activeText2 {
+        color: gold;
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:1045px) and (max-width:1148px) {
+    #hero {
+        float: left;
+        width: 220px;
+        background: #242323;
+        margin-right: 5px;
+    }
+    #actionDiv {
+        text-align: left;
+        padding: 10px;
+        width: 600px;
+        float: left;
+        background: #484747;
+        margin-bottom: 20px;
+    }
+
+    #actImgAll {
+        margin: auto;
+        width: 670px;
+        margin: 20px auto;
+    }
+    #mission,
+    #store,
+    #close {
+        width: 200px;
+        height: 167px;
+        float: left;
+        margin-left: 20px;
+        text-align: center;
+    }
+    #activeText0,
+    #activeText1,
+    #activeText2 {
+        color: gold;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:795px) and (max-width:1044px) {
+    #player {
+        width: 100%;
+        margin: 0;
+    }
+
+    #actImgAll {
+        margin: auto;
+        width: 670px;
+        margin: 20px auto;
+    }
+    #mission,
+    #store,
+    #close {
+        width: 200px;
+        height: 167px;
+        float: left;
+        margin-left: 20px;
+        text-align: center;
+    }
+    #activeText0,
+    #activeText1,
+    #activeText2 {
+        color: gold;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:794px) {
+    .forestImg {
+        width: 300px;
+    }
+    #actImgAll {
+        margin: auto;
+        width: 670px;
+        margin: 20px auto;
+    }
+    #mission,
+    #store,
+    #close {
+        width: 200px;
+        height: 167px;
+        float: left;
+        margin-left: 20px;
+        text-align: center;
+    }
+    #activeText0,
+    #activeText1,
+    #activeText2 {
+        color: gold;
+        margin-top: 30px;
+    }
 }
 
 #mission:hover,
@@ -77,15 +319,225 @@ header {
     box-shadow: inset 0 0 5em gold;
 }
 
+
+#fightDiv {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+#aboutMonsterDiv {
+    width: 600px;
+    float: left;
+    text-align: left;
+    padding: 10x;
+}
+
+#fightDescription {
+    height: 150px;
+    width: 70%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#fightDescription::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #999;
+}
+
+#fightDescription::-webkit-scrollbar {
+    width: 12px;
+    background-color: #999;
+}
+
+#fightDescription::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #D62929;
+}
+
+#monsterSkills {
+    width: 180px;
+    float: left;
+    background: #9b2323;
+}
+
+#actImgAllFight {
+    width: 180px;
+    float: left;
+    margin-left: 20px;
+}
+
 #attack,
 #runAway,
 #spellBook {
     width: 150px;
-    height: 150px;
-    margin-bottom: 20px; 
+    height: 110px;
+    margin-bottom: 20px;
     text-align: center;
-    padding-top: 70px;
     color: gold;
+    padding-top: 40px;
+}
+
+@media (min-width:1260px) and (max-width:1510px) {
+    #actImgAllFight {
+        width: 600px;
+        margin: 20px auto
+    }
+    #attack,
+    #runAway,
+    #spellBook {
+        width: 150px;
+        height: 110px;
+        float: left;
+        color: gold;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1070px) and (max-width:1259px) {
+    #aboutMonsterDiv {
+        width: 450px;
+        float: left;
+        margin-bottom: 20px;
+        padding-right: 10px;
+    }
+    #actImgAllFight {
+        width: 600px;
+        margin: auto
+    }
+    #attack,
+    #runAway,
+    #spellBook {
+        width: 150px;
+        height: 110px;
+        float: left;
+        color: gold;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:990px) and (max-width: 1069px) {
+    #fightDiv {
+        width: 100%;
+        margin: auto;
+    }
+    #aboutMonsterDiv {
+        padding: 10px;
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    #actImgAllFight {
+        width: 600px;
+        margin: auto;
+    }
+    #attack,
+    #runAway,
+    #spellBook {
+        width: 150px;
+        height: 110px;
+        float: left;
+        color: gold;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:933px) and (max-width: 989px) {
+    #fightDiv {
+        width: 100%;
+    }
+    #aboutMonsterDiv {
+        padding: 10px;
+        width: 300px;
+    }
+    #monsterSkills {
+        width: 155px;
+        background: #9b2323;
+    }
+    #actImgAllFight {
+        width: 500px;
+        margin: auto;
+    }
+    #attack,
+    #runAway,
+    #spellBook {
+        width: 150px;
+        height: 110px;
+        float: left;
+        color: gold;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width:800px) and (max-width:932px) {
+    #fightDiv {
+        width: 100%;
+    }
+    #aboutMonsterDiv {
+        padding-right: 10px;
+        width: 300px;
+    }
+    #monsterSkills {
+        width: 155px;
+        background: #9b2323;
+    }
+    #actImgAllFight {
+        width: 600px;
+        margin: auto;
+    }
+    #attack,
+    #runAway,
+    #spellBook {
+        width: 150px;
+        height: 110px;
+        float: left;
+        color: gold;
+        margin-right: 20px;
+    }
+}
+
+
+@media (min-width:790px) and (max-width:799px) {
+    #fightDiv {
+        width: 100%;
+    }
+    #aboutMonsterDiv {
+        padding-right: 10px;
+        width: 450px;
+    }
+    #monsterSkills {
+        width: 155px;
+        background: #9b2323;
+    }
+    #actImgAllFight {
+        width: 200px;
+        margin: auto;
+        float: left;
+    }
+    #attack,
+    #runAway,
+    #spellBook {
+        width: 150px;
+        height: 110px;
+        float: left;
+        color: gold;
+        margin-right: 20px;
+    }
+
+}
+
+@media(max-width:900px) {
+    #activeText0,
+    #activeText1,
+    #activeText2,
+    #activeText3,
+    #activeText4,
+    #activeText5 {
+        letter-spacing: 2px;
+        font-family: 'Nosifer';
+        visibility: visible;
+    }
 }
 
 #activeText0,
@@ -102,7 +554,8 @@ header {
 #closeDiv,
 #alertBox {
     height: auto;
-    width: 350px;
+    /*    width: 350px;*/
+    width: 30%;
     background: #222;
     padding: 20px;
     margin-top: -1000px;
@@ -113,44 +566,54 @@ header {
     box-shadow: 7px 7px 10px #444;
     border-radius: 10px;
 }
+
 #spellBookAlertBox {
-    margin: -550px 0 0 15%;
+    margin: -800px 0 0 15%;
     background: url('../grafika/book.png');
-    width: 630px;
-    height: 481px;
+    width: 610px;
+    /*630*/
+    height: 461px;
+    /*481*/
     z-index: 1000;
     position: absolute;
-    text-align: center;  
+    text-align: center;
     color: #111;
     padding: 10px;
 }
+
 #leftSideSpellBook {
     margin-left: 24px;
     width: 283px;
     float: left;
     padding-top: 10px;
 }
+
 #rightSideSpellBook {
     width: 283px;
     margin-right: 20px;
     float: left;
     padding-top: 40px;
 }
+
 #closeSpellBook {
     text-align: right;
     color: #30200b;
 }
+
 #closeSpellBook:hover {
     color: gold;
 }
+
 #spellBookAlertBox img {
     padding: 10px;
     float: left;
 }
+
 #spellBookAlertBox img:hover {
     border: 1px solid gold;
     box-shadow: inset 0 0 8px gold;
 }
+
 #alertBox button {
     margin-top: 20px
 }
